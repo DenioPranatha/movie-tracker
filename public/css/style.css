@@ -1,0 +1,63 @@
+.yl{
+    background-color: #FFB400;
+}
+
+.gr{
+    background-color: #2D4059;
+}
+
+.text-gr{
+    color: #2D4059;
+}
+
+.text-yl{
+    color: #FFB400;
+}
+
+.text-wh{
+    color: #F6F6F6;
+}
+
+.title-font{
+    font-family: 'Signika Negative', sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.logo-img{
+    height: 25px;
+    width: 25px;
+    border-radius: 0px;
+    margin: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-font{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 16px;
+}
+
+.bld{
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.signin-btn{
+    border-radius: 10px;
+    outline: none;
+    box-shadow: none;
+    width: fit-content;
+    height: fit-content;
+    padding: 2px 8px;
+}
+
+.h100{
+    height: 100vh;
+}

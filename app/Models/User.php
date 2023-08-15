@@ -17,11 +17,19 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
+    protected $guarded = [
+        'id',
     ];
+
+    public function CatalogDetail(){
+        return $this->hasMany(CatalogDetail::class);
+    }
+
+    public function WishlistDetail(){
+        return $this->hasMany(WishlistDetail::class);
+    }
+
+
 
     /**
      * The attributes that should be hidden for serialization.
