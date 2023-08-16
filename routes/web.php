@@ -16,12 +16,18 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', [HomeController::class, 'home']);
-Route::get('/signin', [UserController::class, 'signin']);
+Route::get('/signin', [UserController::class, 'signin'])->middleware('guest')->name('login');
+Route::post('/signin', [UserController::class, 'authenticate']);
 
-Route::get('/signup', [UserController::class, 'signup']);
 
+Route::get('/signup', [UserController::class, 'signup'])->middleware('guest');
+Route::post('/signup', [UserController::class, 'create']);
 
-Route::get('/watched', [UserController::class, 'watched']);
-Route::get('/wishlist', [UserController::class, 'wishlist']);
+Route::get('/signout', [UserController::class, 'signout'])->middleware('auth');
+
+Route::get('/profile', [UserController::class, 'profile'])->middleware('auth');
+
+Route::get('/watched', [UserController::class, 'watched'])->middleware('auth');
+Route::get('/wishlist', [UserController::class, 'wishlist'])->middleware('auth');
 // Route::get('/signin', [HomeController::class, 'home']);
 // Route::get('/signin', [HomeController::class, 'home']);

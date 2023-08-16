@@ -1,4 +1,4 @@
-<div class="card  my-1" style="width: 18rem;">
+<div class="movie-card card m-3" style="width: 18rem;">
     <img class="card-img-top" src="..." alt="Card image cap">
     <div class="card-body">
     <h5 class="text-gr">Card title</h5>
