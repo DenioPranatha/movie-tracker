@@ -1,3 +1,7 @@
+body{
+    background-color: #F6F6F6;
+}
+
 .yl{
     background-color: #FFB400;
 }
@@ -7,6 +11,10 @@
 }
 
 .text-gr{
+    color: #2D4059;
+}
+
+#text-gr{
     color: #2D4059;
 }
 
